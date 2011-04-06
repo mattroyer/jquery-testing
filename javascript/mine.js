@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // When "Powered" is clicked, it fades out and back in
-  // Writes "Animation compete!" in the .second class
+  // Writes "Animation complete!" in the .second class
   $('.power').click(function() {
     $('.power').fadeOut(500, function() {
       $(this).show('slow');
