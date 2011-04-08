@@ -68,6 +68,9 @@ hr {
   margin-top: -20px;
   color: #999;
 }
+.subHeading span {
+  display: none;
+}
 
 .footer {
   color: #555;

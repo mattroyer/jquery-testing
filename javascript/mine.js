@@ -12,12 +12,23 @@ $(document).ready(function() {
   // Fade in with the header
   $('.header').fadeIn(3000);
 
+  // Get the text from the subHeading class
+  // Split it and turn it into an array store as "letter"
   var letter = $('.subHeading').text().split('');
-  var letterLength = letter.length;
+
+  // Get each letter element and attach a span class to it
   $(letter).each(function(i) {
-    $('.change').append('<span class="' + letter[i] + '">' + letter[i] + '</span>');
+    $('.subHeading').append('<span class="' + letter[i] + '">' + letter[i] + '</span>')
   });
-  $(:contains('Where the awesome is'));
+
+  // Remove the initial phrase that was split into an array
+  $('.change').remove();
+
+  // Function to show each letter one at a time
+  $('.subHeading span:first-child').show("fast", function() {
+    $(this).next().show("fast", arguments.callee);
+  });
+
   // Prevent default click action on nav links
   // Toggles which .nav section is hidden (Home/About links)
   $('.nav a').click(function(event) {
