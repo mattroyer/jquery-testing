@@ -13,7 +13,8 @@ $(document).ready(function() {
   $('.header').fadeIn(3000);
 
   // Get the text from the subHeading class
-  // Split it and turn it into an array store as "letter"
+  // Split it and turn it into an array
+  // Store in the variable "letter"
   var letter = $('.subHeading').text().split('');
 
   // Get each letter element and attach a span class to it
