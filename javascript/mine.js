@@ -30,6 +30,13 @@ $(document).ready(function() {
     $(this).next().show("fast", arguments.callee);
   });
 
+  // Function to hide each letter one at a time when clicked
+  $('.subHeading').click(function() {
+    $('.subHeading span:last-child').fadeOut("fast", function() {
+      $(this).prev().fadeOut(100, arguments.callee).after('&nbsp;');
+    });
+  });
+
   // Prevent default click action on nav links
   // Toggles which .nav section is hidden (Home/About links)
   $('.nav a').click(function(event) {
