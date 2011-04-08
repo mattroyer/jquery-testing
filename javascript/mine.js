@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // When "Powered" is clicked, it fades out and back in
-  // Writes "Animation compete!" in the .second class
+  // Writes "Animation complete!" in the .second class
   $('.power').click(function() {
     $('.power').fadeOut(500, function() {
       $(this).show('slow');
@@ -12,10 +12,16 @@ $(document).ready(function() {
   // Fade in with the header
   $('.header').fadeIn(3000);
 
-  // Prevent default click action on links
+  var letter = $('.subHeading').text().split('');
+  var letterLength = letter.length;
+  $(letter).each(function(i) {
+    $('.change').append('<span class="' + letter[i] + '">' + letter[i] + '</span>');
+  });
+  $(:contains('Where the awesome is'));
+  // Prevent default click action on nav links
   // Toggles which .nav section is hidden (Home/About links)
   $('.nav a').click(function(event) {
     event.preventDefault();
-    $('.nav').toggle();
+    $('.nav').toggle()
   });
 });

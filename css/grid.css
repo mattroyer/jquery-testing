@@ -62,7 +62,11 @@
 
 hr {
   color: #fff;
-  width: 950px;
+  width: 945px;
+}
+.subHeading {
+  margin-top: -20px;
+  color: #999;
 }
 
 .footer {
