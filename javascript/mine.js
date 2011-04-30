@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   // When "Powered" is clicked, it fades out and back in
   // Writes "Animation complete!" in the .second class
   $('.power').click(function() {
@@ -9,8 +10,38 @@ $(document).ready(function() {
     });
   });
 
-  // Fade in with the header
+  // Fade in the header
   $('.header').fadeIn(3000);
+
+  // Prevent default click action on nav links
+  // Toggles which .nav section is hidden (Home/About links)
+  $('.nav a').click(function(event) {
+    event.preventDefault();
+    $('.nav').toggle()
+  });
+
+  // Right-clicking the About link will take you
+  // to the about page
+  $('.about').bind('contextmenu', function(event) {
+    event.preventDefault();
+    window.location = $('.about').attr("href");
+  });
+
+
+  // As long as the full window (document) has focus
+  // You'll be able to use this next bit of code
+  // I'll give you a hint:
+  // It's only useful on the About.html page
+  // And it's when you press a certain key (104)
+  $(this).keypress(function(event) {
+    if (event.which == '104') {
+      window.location = $('.home').attr("href");
+    };
+  });
+
+  // ********************* //
+  // SUBHEADING CODE START //
+  // ********************* //
 
   // Get the text from the subHeading class
   // Split it and turn it into an array
@@ -33,14 +64,12 @@ $(document).ready(function() {
   // Function to hide each letter one at a time when clicked
   $('.subHeading').click(function() {
     $('.subHeading span:last-child').fadeOut("fast", function() {
-      $(this).prev().fadeOut(100, arguments.callee).after('&nbsp;');
+      $(this).prev().fadeOut(100, arguments.callee);
     });
+    $(this).append('&nbsp;');
   });
 
-  // Prevent default click action on nav links
-  // Toggles which .nav section is hidden (Home/About links)
-  $('.nav a').click(function(event) {
-    event.preventDefault();
-    $('.nav').toggle()
-  });
+  // ******************* //
+  // SUBHEADING CODE END //
+  // ******************* //
 });

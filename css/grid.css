@@ -36,28 +36,13 @@
 /*   CUSTOM STYLE   */
 /* ================ */
 
-.nav a:link {
+a:link, a:visited , a:hover , a:active{
+  text-decoration: none;
+}
+
+.nav a:link, .nav a:visited , .nav a:hover , .nav a:active{
   font-size: 1em;
   font-family: arial, helvetica, sans-serif;
-  text-decoration: none;
-}
-
-.nav a:visited {
-  font-size:1em;
-  font-family:arial, helvetica, sans-serif;
-  text-decoration: none;
-}
-
-.nav a:hover {
-  font-size:1em;
-  font-family:arial, helvetica, sans-serif;
-  text-decoration: none;
-}
-
-.nav a:active {
-  font-size:1em;
-  font-family:arial, helvetica, sans-serif;
-  text-decoration: none;
 }
 
 hr {
