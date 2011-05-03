@@ -69,3 +69,7 @@ hr {
 .header {
   font-family: "helvetica";
 }
+
+#nameForm {
+  display: none;
+}
