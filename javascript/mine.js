@@ -34,10 +34,50 @@ $(document).ready(function() {
   // It's only useful on the About.html page
   // And it's when you press a certain key (104)
   $(this).keypress(function(event) {
-    if (event.which == '104') {
-      window.location = $('.home').attr("href");
+    if (!$(event.target).is('input', 'textarea')) {
+      if (event.which == '104') {
+        window.location = $('.home').attr("href");
+      };
     };
   });
+
+  // ******************* //
+  // YOURNAME CODE START //
+  // ******************* //
+
+  // Click on the YourName link at the bottom
+  // of the page and it will bring up a text box
+  // Enter your name and upon submit (enter key)
+  // all yourName classes in the document will be
+  // changed to your value you input
+
+  // The click function to bring up a text box
+  $('#yourNameLink').click(function(nameEvent) {
+    nameEvent.preventDefault();
+    $(this).hide();
+    $('#nameForm').show();
+  });
+
+  // The ajax submit function
+  $('#nameForm').submit(function(e) {
+    e.preventDefault();
+   
+    var name = $('#name').val()
+
+    $.ajax({
+      data: name,
+      success: function() {
+        $('#nameForm').hide();
+        $('.yourName').text(name);
+        $('#yourNameLink').show();
+      }
+    });
+    return false;
+  });
+
+  // ***************** //
+  // YOURNAME CODE END //
+  // ***************** //
 
   // ********************* //
   // SUBHEADING CODE START //
