@@ -5,8 +5,7 @@ This is my own sample code for jQuery. I need a hands-on approach when learning 
 Here are the following things these documents do so far:
 
 * The Header text fades in
-* The subHeading text enters itself one letter at a time
-  The function I built to do this actually splits up a string in the html document on the fly and does this
+* The subHeading text enters itself one letter at a time. The function I built to do this actually splits up a string in the html document on the fly and does this
 * If you click on the subHeading, it will remove itself one letter at a time
 * Clicking on the Home | About links makes the links switch places with each other
 * Right-clicking on the About link will take you to the about page
