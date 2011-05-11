@@ -45,19 +45,25 @@ a:link, a:visited , a:hover , a:active{
   font-family: arial, helvetica, sans-serif;
 }
 
+.nav {
+  float: right;
+}
+
+#foot_right {
+  float: right;
+  margin: 0 auto;
+}
+
 hr {
   color: #fff;
   width: 945px;
 }
-.subHeading {
+#subHeading {
   margin-top: -20px;
   color: #999;
 }
-.subHeading span {
-  display: none;
-}
 
-.footer {
+#footer {
   color: #555;
   font-size: 15px;
 }
@@ -66,10 +72,60 @@ hr {
   display: none;
 }
 
-.header {
+#header {
   font-family: "helvetica";
 }
 
-#nameForm {
-  display: none;
+.second {
+  float: right;
+}
+
+.highlight {
+  background: #99ee22;
+}
+
+/* POPUP CSS */
+ #popupBackground{  
+  display:none;  
+  position:fixed;  
+  _position:absolute; /* hack for internet explorer 6*/  
+  height:100%;  
+  width:100%;  
+  top:0;  
+  left:0;  
+  background:#000000;  
+  border:1px solid #000000;  
+  z-index:1;
+}  
+#popupForm{  
+  display:none;
+  position:fixed;  
+  _position:absolute; /* hack for internet explorer 6*/  
+  height:384px;  
+  width:408px;  
+  background:#FFFFFF;  
+  border:2px solid #cecece;  
+  z-index:2; 
+  padding:12px;  
+  font-size:13px;  
+}  
+#popupForm h1{  
+  text-align:left;  
+  color:#6FA5FD;  
+  font-size:22px;  
+  font-weight:700;  
+  border-bottom:1px dotted #D3D3D3;  
+  padding-bottom:2px;  
+  margin-bottom:20px;  
+}  
+#popupFormClose{  
+  font-size:14px;  
+  line-height:14px;  
+  right:6px;  
+  top:4px;  
+  position:absolute;  
+  color:#6fa5fd;  
+  font-weight:700;  
+  display:block; 
+  cursor:pointer; 
 }

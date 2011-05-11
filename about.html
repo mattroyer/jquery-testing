@@ -15,7 +15,8 @@
 <div class="row">
     <!-- Left Side -->
 	<div class="column grid_8">
-      <h2 class="header hideit yourName">YourName</h2><p class="subHeading"><span class="change">Where the awesome is</span></p>
+      <h2 id="header" class="yourName">YourName</h2>
+      <p id="subHeading">Where the awesome is</p>
     </div>
 	
 	<!-- Right Side -->
@@ -36,7 +37,7 @@
 <!-- MAIN BODY -->
 <div class="row">
     <!-- Left Side -->
-	<div class="column grid_8">
+	<div id="aboutContent1" class="column grid_8">
       <h4>Congratulations!</h4>
       <p>You found the about page.</p>
       <p>Your reward for finding this page is finding a way back to the homepage.</p>
@@ -46,19 +47,30 @@
     </div>
 	
 	<!-- Right Side -->
-	<div class="column grid_4"><p class="second">&nbsp;</p></div>
+	<div id="aboutContent2" class="column grid_4"><p class="second">&nbsp;</p></div>
 </div>
 
 <hr />
 
+<!-- POPUP START -->
+
+<div id="popupForm">
+  <a id="popupFormClose">x</a>
+    <h1>Enter your name</h1>
+    <form id="nameForm"><input type="text" id="name" /></form>
+</div>
+<div id="popupBackground"></div>
+
+<!-- POPUP END -->
+
 <!-- FOOTER -->
 <div class="row">
 	<!-- Left Side -->
-	<div class="column grid_8"><span class="footer yourName">YourName</span> | 2011</div>
+	<div class="column grid_8"><span id="footer" class="yourName">YourName</span> | 2011</div>
 	
 	<!-- Right Side -->
 	<div class="column grid_4">
-	  <span class="power">Powered</span> by <form id="nameForm"><input type="text" id="name"></input></form><a id="yourNameLink" class="yourName" href="#">YourName</a>
+	  <p id="foot_right"><span id="power">Powered</span> by <a id="yourNameLink" class="yourName" href="#">YourName</a></p>
 	</div>
 </div>
 
