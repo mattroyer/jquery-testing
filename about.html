@@ -5,9 +5,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title class="yourName">YourName</title>
     <link href="css/grid.css" type="text/css" rel="stylesheet" media="screen"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js" type="text/javascript"></script>
-    <script language="javascript" src="javascript/mine.js"></script>
-
 </head>
 <body>
 
@@ -23,9 +20,11 @@
 	<div class="column grid_4">
       <p class="nav">
         <a href="index.html" class="home">Home</a> |
-        <a href="about.html" class="about">About</a>
+        <a href="about.html" class="about">About</a> |
+        <a href="code.html" class="code">Code</a>
       </p>
       <p class="nav hideit">
+        <a href="code.html" class="code">Code</a> |
         <a href="about.html" class="about">About</a> |
         <a href="index.html" class="home">Home</a>
       </p>
@@ -37,17 +36,15 @@
 <!-- MAIN BODY -->
 <div class="row">
     <!-- Left Side -->
-	<div id="aboutContent1" class="column grid_8">
-      <h4>Congratulations!</h4>
-      <p>You found the about page.</p>
-      <p>Your reward for finding this page is finding a way back to the homepage.</p>
-      <p>No cheating now. You have to find your way back to the homepage, through this about page.</p>
-      <p>Don't reload the website, type the domain name (or restart the index.html file again), etc.</p>
-      <p>Use your wits, go ahead and look at the code if you know how, and try to find your way off of the page.</p>
+	<div id="aboutContent1" class="column grid_10">
+       <p class="large">Why I created this</p>
+       <p>This site started as a project for me to learn <a href="http://www.jquery.com/">jQuery</a>.</p>
+       <p>I have grown from there, learning more about programming methodologies, code structure, and more about other languages.</p>
+       <p>JavaScript is one of the languages I'm learning more about. Because jQuery is only a library for JavaScript, I am getting a good grasp of the language.</p>
     </div>
 	
 	<!-- Right Side -->
-	<div id="aboutContent2" class="column grid_4"><p class="second">&nbsp;</p></div>
+	<div id="aboutContent2" class="column grid_2"><p id="second">&nbsp;</p></div>
 </div>
 
 <hr />
@@ -75,4 +72,6 @@
 </div>
 
 </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js" type="text/javascript"></script>
+    <script language="javascript" src="javascript/mine.js"></script>
 </html>
