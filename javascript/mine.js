@@ -192,7 +192,7 @@ $(document).ready(function() {
      another page (i.e. About, Code), and when you press
      the H key to load the main index.html content again. */
   indexContent.delegate('p', 'click', function(clickedLine) {
-    if(!$(clickedLine.target).is('a')) {
+    if(!$(clickedLine.target).is('a') && !$(clickedLine.target).is('#codeContent p')) {
       if(!running) {
         running = true;
         line = $(clickedLine.currentTarget);
