@@ -114,6 +114,10 @@ a:link, a:visited , a:hover , a:active{
   font-size: 2em;
 }
 
+.strong {
+  font-weight: bold;
+}
+
 .highlight {
   background: #99ee22;
   font-size: .75em;
