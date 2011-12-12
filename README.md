@@ -12,4 +12,7 @@ Here are the following things these documents do so far:
 * Pressing the H key when you are not in a text field will bring you to the index.html page
 * Clicking the YourName link at the bottom of the page brings up a text box for you to enter your name. All .yourName class texts change to the value you enter
 
+NOTE: This repo hasn't been updated in a while. I am working on a
+revision that will make the code better for learning.
+
 Feel free to copy any code you find in here, change it, and mess with it in any way you would like. Please fork this project and help me grow the samples. Also, please correct my code if it is incorrect.
